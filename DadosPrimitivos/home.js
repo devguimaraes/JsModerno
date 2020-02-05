@@ -26,10 +26,11 @@ const boolean2 = false //0 - (zero) é falso (false) e 1 (um) é verdadeiro (tru
 const a = [1, 2, 3, 4, 5, 6];
 const b = a;
 a.push(19); 
+
 //Valores passados por referência apontam para o mesmo local da mémoria, por isso quando valor é adicionado a varivael B, ele também adiciona a variavel A
 
 
-console.log(a,b)
+console.log(a,b);
 
 
 
