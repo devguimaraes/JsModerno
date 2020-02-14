@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio - JSModerno</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        form {
+            margin: auto;
+            border: 1px black solid;
+            width: 80%;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        form h1{
+            text-align: center;
+        }
+
+        form input {
+            width: 200px;
+            margin-left: 10px;
+            height: 20px;
+        }
+
+        form input:focus{
+            background: black;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+
+        form input::placeholder {
+            text-align: center;
+            font-style:italic;
+            font-display:initial;
+            pointer-events: stroke;
+        }
+
+        form button {
+            background-color: grey;
+            border: 0px;
+            padding: 10px;
+            font-size: 14px;
+            font-style:unset;
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+    
+        <form method="POST" action="" class="form">
+            <h1>Me dê seus dados</h1>
+            <label for="nome">
+                <p>Nome:<input autofocus id="nome" placeholder="Digite seu nome" class="nome" type="text"></p>
+            </label>
+            <label for="sobrenome">
+                <p>Sobrenome:<input id="sobrenome" placeholder="Digite seu seu sobrenome" type="text" class="sobrenome"></p>
+            </label>
+            <label for="peso">
+                <p>Peso: <input id="peso" placeholder="Digite seu seu peso" type="number" class="peso"></p>
+            </label>
+            <label for="altura">
+                <p>Altura: <input id="altura" placeholder="Digite seu seu peso" type="number" class="altura"></p>
+            </label>
+            <button>Enviar</button>
+        </form>  
+
+        <div id="resultado">
+            <!--Div com retorno dos dados do formulário-->
+        </div>
+    </section>
+
+    <script src="script/app.js"></script>
+</body>
+</html>
