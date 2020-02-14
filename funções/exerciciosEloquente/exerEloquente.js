@@ -90,4 +90,4 @@ let meuDados = {
     time: "flamengo",
 }
 
-console.log("idade" in meuDados); //o in verifica se o objeto possuio a propriedade declarada 
+console.log("idade" in meuDados); //o in verifica se o objeto possuio a propriedade declarada   
