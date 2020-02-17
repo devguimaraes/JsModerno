@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio - Modulo 1</title>
+    <style>
+
+        /*Reset CSS minimal*/
+        html {
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body,h1,h2,h3,h4, h5, h6,p, ol,ul {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+
+        ol,ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*Layout Page*/
+
+        h1 {
+            text-align: center;
+            margin: 25px 0px;
+            font-size: 2rem ;
+        }
+
+        .form {
+            margin: auto;
+            width: 50%;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        .form-p {
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-style: oblique;
+
+        }
+
+        .form input {
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+
+
+      
+
+    </style>
+</head>
+
+<body>
+    <section id="form">
+        <h1>Forneça seus dados gratuitamente</h1>
+        <form action="#" method="GET" class="form">
+            <label for="nome">
+                <p class="form-p">Nome: <input type="text" placeholder="Digite seu nome" id="nome" name="nome"></p>
+            </label>
+            <label for="sobrenome">
+                <p class="form-p">Sobrenome: <input type="text" placeholder="Digite seu sobrenome" id="sobrenome" name="sobrenome"></p>
+            </label>
+            <label for="peso">
+                <p class="form-p">Peso: <input type="number" placeholder="Digite seu peso" id="peso" name="peso"></p>
+            </label>
+            <label for="altura">
+                <p class="form-p">Altura: <input type="text" placeholder="Digite seu altura" id="altura" name="altura"></p>
+            </label>
+            <button id="btn-enviar">Enviar</button>
+        </form>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
