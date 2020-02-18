@@ -58,7 +58,16 @@
             margin-bottom: 10px;
         }
 
-
+        div#resposta {
+            width: 50%;
+            margin: 10px auto;
+            padding: 15px;
+            border: 1px black solid;
+            background-color: gray;
+            color: white;
+            font-family: Helvetica, sans-serif;
+            font-weight: bolder;
+        }
 
       
 
@@ -70,19 +79,23 @@
         <h1>Forneça seus dados gratuitamente</h1>
         <form action="#" method="GET" class="form">
             <label for="nome">
-                <p class="form-p">Nome: <input type="text" placeholder="Digite seu nome" id="nome" name="nome"></p>
+                <p class="form-p">Nome: <input type="text" placeholder="Digite seu nome" class="dadosForm" id="nome" name="nome"></p>
             </label>
             <label for="sobrenome">
-                <p class="form-p">Sobrenome: <input type="text" placeholder="Digite seu sobrenome" id="sobrenome" name="sobrenome"></p>
+                <p class="form-p">Sobrenome: <input type="text" placeholder="Digite seu sobrenome" class="dadosForm" id="sobrenome" name="sobrenome"></p>
             </label>
             <label for="peso">
-                <p class="form-p">Peso: <input type="number" placeholder="Digite seu peso" id="peso" name="peso"></p>
+                <p class="form-p">Peso: <input type="number" placeholder="Digite seu peso" class="dadosForm" id="peso" name="peso"></p>
             </label>
             <label for="altura">
-                <p class="form-p">Altura: <input type="text" placeholder="Digite seu altura" id="altura" name="altura"></p>
+                <p class="form-p">Altura: <input type="text" placeholder="Digite seu altura" class="dadosForm" id="altura" name="altura"></p>
             </label>
             <button id="btn-enviar">Enviar</button>
         </form>
+
+        <div id="resposta">
+
+        </div>
     </section>
 
     <script src="app.js"></script>
