@@ -2,7 +2,7 @@
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
-}
+}/* O exemplo acima é uma variavel em CSS3, irado não?! heheh*/
 
 * {
   box-sizing: border-box;
@@ -12,14 +12,14 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
+  background: var(--primary-color);/*Variavel sendo usar*/
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
 }
 
 .container {
-  max-width: 640px;
+  max-width: 40%;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
@@ -39,12 +39,12 @@ form input {
 }
 
 form input:focus {
-  outline: 1px solid var(--primary-color);
+  outline: 1px solid var(--primary-color);/*Variavel sendo usar*/
 }
 
 form button {
   border: none;
-  background: var(--primary-color);
+  background: var(--primary-color);/*Variavel sendo usar*/
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -54,5 +54,5 @@ form button {
 }
 
 form button:hover {
-  background: var(--primary-color-darker);
+  background: var(--primary-color-darker);/*Variavel sendo usar*/
 }
