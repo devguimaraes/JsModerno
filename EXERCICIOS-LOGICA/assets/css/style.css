@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}/* O exemplo acima é uma variavel em CSS3, irado não?! heheh*/
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);/*Variavel sendo usar*/
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+p {
+  margin: 0;
+  text-align: center;
+  word-wrap: break-word; /*Quebra automatica de linha quando a palavra vaza de um elemento */
+}
+
+li {
+  list-style: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+.container{
+
+  max-width: 60%;
+  max-height: 50%;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.container h1#titulo {
+  text-align: center;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  
+}
+
+
+
+
+ 
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);/*Variavel sendo usar*/
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);/*Variavel sendo usar*/
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);/*Variavel sendo usar*/
+}
