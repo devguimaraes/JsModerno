@@ -34,7 +34,6 @@ function escopo() {
         divResposta.style.backgroundColor = cor;
         divResposta.style.color = "white";
     }
-
     formulario.addEventListener("submit", Calculando);
 }
 
