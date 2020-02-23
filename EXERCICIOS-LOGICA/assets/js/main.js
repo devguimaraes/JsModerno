@@ -7,7 +7,7 @@ function escopo() {
         evento.preventDefault()
         const peso = document.querySelector("#peso").value;
         const tamanho = Number(document.querySelector("#altura").value);
-        
+
         if (!peso || !tamanho) {
             let retorno = document.querySelector(".resposta");
             retorno.style.backgroundColor = "#FFA500";
@@ -18,41 +18,35 @@ function escopo() {
         }
 
         function semNome(calculadora) {
-            if (calculadora > 0 && calculadora < 18.5) {
-                pegaItem(".pesoMagro");
-                escreveNaTela(calculadora, "green")
-            } else if (calculadora >= 18.5 && calculadora <= 24.9) {
-                pegaItem(".pesoNormal");
-                escreveNaTela(calculadora, "green")
-            } else if (calculadora >= 25 && calculadora <= 29.9) {
-                pegaItem(".acimaDoPeso");
-                escreveNaTela(calculadora, "yellow")
-            } else if (calculadora >= 30 && calculadora <= 34.9) {
-                pegaItem(".obesidade1");
-                escreveNaTela(calculadora, "red")
-            } else if (calculadora >= 35 && calculadora <= 39.9) {
-                pegaItem(".obesidade2");
-                escreveNaTela(calculadora, "red")
-            } else if (calculadora >= 40) {
-                pegaItem(".obesidade3")
-                escreveNaTela(calculadora, "red")
-            }
+            if (calculadora > 0 && calculadora < 18.5) return pegaItem(".pesoMagro", calculadora, "green")
+            if (calculadora >= 18.5 && calculadora <= 24.9) return pegaItem(".pesoNormal", calculadora, "green")
+            if (calculadora >= 25 && calculadora <= 29.9) return pegaItem(".acimaDoPeso", calculadora, "yellow")
+            if (calculadora >= 30 && calculadora <= 34.9) return pegaItem(".obesidade1", calculadora, "red")
+            if (calculadora >= 35 && calculadora <= 39.9) return pegaItem(".obesidade2", calculadora, "red")
+            if (calculadora >= 40) return pegaItem(".obesidade3", calculadora, "red")
         }
 
-    }
-    function pegaItem(parametro) {
+    }///termina a função 
+    function pegaItem(parametro, calculadora, cor) {
         let respostaIMC = document.querySelector(parametro)
         respostaIMC.style.backgroundColor = "red";
         respostaIMC.style.color = "white";
+<<<<<<< HEAD
         
     }
+=======
+        respostaIMC.style.backgroundColor = "red";
+        respostaIMC.style.color = "white";
+>>>>>>> a3ed4b08764121c8b7ea667f6abcfa3e7133b625
 
-    function escreveNaTela(calculadora, cor) {
         divResposta.innerHTML += `<p>Seu iMC é ${calculadora.toFixed(2)}</p>`;
         divResposta.style.backgroundColor = cor;
         divResposta.style.color = "white";
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a3ed4b08764121c8b7ea667f6abcfa3e7133b625
     formulario.addEventListener("submit", Calculando);
 }
 
