@@ -44,8 +44,7 @@ function escopo() {
         let respostaIMC = document.querySelector(parametro)
         respostaIMC.style.backgroundColor = "red";
         respostaIMC.style.color = "white";
-        respostaIMC.style.backgroundColor = "red";
-        respostaIMC.style.color = "white";
+        
     }
 
     function escreveNaTela(calculadora, cor) {
@@ -54,9 +53,7 @@ function escopo() {
         divResposta.style.color = "white";
     }
 
-
     formulario.addEventListener("submit", Calculando);
-
 }
 
 escopo();
