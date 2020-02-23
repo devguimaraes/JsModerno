@@ -30,23 +30,11 @@ function escopo() {
     function pegaItem(parametro, calculadora, cor) {
         let respostaIMC = document.querySelector(parametro)
         respostaIMC.style.backgroundColor = "red";
-        respostaIMC.style.color = "white";
-<<<<<<< HEAD
-        
-    }
-=======
-        respostaIMC.style.backgroundColor = "red";
-        respostaIMC.style.color = "white";
->>>>>>> a3ed4b08764121c8b7ea667f6abcfa3e7133b625
-
         divResposta.innerHTML += `<p>Seu iMC é ${calculadora.toFixed(2)}</p>`;
         divResposta.style.backgroundColor = cor;
         divResposta.style.color = "white";
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> a3ed4b08764121c8b7ea667f6abcfa3e7133b625
     formulario.addEventListener("submit", Calculando);
 }
 
