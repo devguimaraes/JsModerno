@@ -12,7 +12,6 @@ for(let pegaParagrafo of p){
 
 
 
-
 function trocaCor(parametro){
     parametro.style.backgroundColor = backgroundColor;
     parametro.style.color = "white";
