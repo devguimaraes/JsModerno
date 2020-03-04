@@ -16,11 +16,9 @@ usar número de 0 a 100 pra testar
 function fizzBuzz(numero) {
     if(typeof numero == "number"){
         if(numero % 3 == 0 && numero % 5 == 0) return numero + " - FizzBuzz"
-       if(numero % 3 == 0) return numero + " - Fizz"
-       if(numero % 5 == 0) return numero + " - Buzz" 
+        if(numero % 3 == 0) return numero + " - Fizz"
+        if(numero % 5 == 0) return numero + " - Buzz" 
        return numero 
-    }else{
-        console.log("Valor informado não é um número valido")
     }
 }
 
