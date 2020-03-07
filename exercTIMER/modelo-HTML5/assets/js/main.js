@@ -20,11 +20,9 @@ function getTimeFromSeconds(segundos){
     const dataSeconds = new Date(segundos * 1000)
     return dataSeconds.toLocaleTimeString('pt-BR', {
         hour12: false, 
-        timeZone: 'GMT' 
+        timeZone: 'UTC' 
     })
 }
-
-
 
 btnIniciar.addEventListener('click', function(){
     relogio.classList.remove("pausado")
