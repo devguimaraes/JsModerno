@@ -7,12 +7,9 @@ function criarCalculadora() {
            
         },
         
-<<<<<<< HEAD
         btnParaDisplay(valor){
             this.display.value += valor;
         },
-=======
->>>>>>> a8e2e4484e364afeb74a872d6af172cb3850d0e3
 
         clearDisplay(){
             this.display.value = '';
@@ -53,18 +50,13 @@ function criarCalculadora() {
                 }
 
                 if(el.classList.contains('btn-igual')){
+                    if(!this.display.value){return;}
                     this.realizaConta()
                 }
 
             })
         },
-<<<<<<< HEAD
         
-=======
-        btnParaDisplay(valor){
-            this.display.value += valor;
-        },
->>>>>>> a8e2e4484e364afeb74a872d6af172cb3850d0e3
     }
         
 }
