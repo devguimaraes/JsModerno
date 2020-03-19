@@ -6,6 +6,7 @@ function criarCalculadora() {
             this.cliqueBotao()
            
         },
+
         
         btnParaDisplay(valor){
             this.display.value += valor;
@@ -24,16 +25,23 @@ function criarCalculadora() {
 
             try {
                 conta = eval(conta) 
-                this.display.value = conta;
+                if(!conta)return;
+                this.display.value = String(conta);
             } catch (e) {
                 this.display.classList.add('resposta')
                 this.display.value = 'Está não é uma conta válida';
             }
 
         },
-
-
+        
         cliqueBotao() {
+            document.addEventListener('keypress', ()=>{
+                let letras = event.key;
+                if(letras === 'Enter'){
+                   this.realizaConta()
+                }
+            }),
+
             document.addEventListener('click', (e) => {
                 const el = e.target;
 
@@ -56,6 +64,7 @@ function criarCalculadora() {
 
             })
         },
+
         
     }
         
