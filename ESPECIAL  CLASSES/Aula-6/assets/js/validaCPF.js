@@ -54,5 +54,3 @@ class ValidaCPF{
 
 }
 
-const cpf = new ValidaCPF('128.143.207-50')
-console.log(cpf.valida())

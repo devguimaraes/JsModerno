@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulário de Cadastro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Formulário de Cadastro</h1>
+    <ul>
+      <li>Nenhum campo pode estar vazio</li>
+      <li>Usuário só podera conter letras ou números</li>
+      <li>Usuário deverá conter 3 a 12 caracteres</li>
+      <li>Senha precisa ter entre 6 e 12 caracteres</li>
+    </ul>
+    <hr>
+    <form action="envioForm.html" class="formulario form-group">
+      <label for="nome">
+        <p>Nome: <input id="nome" class="form-control nome validar" type="text"></p>
+      </label>
+      <label for="sobrenome">
+        <p>Sobrenome: <input id="sobrenome" class="form-control sobrenome validar" type="text"></p>
+      </label>
+      <label for="cpf">
+        <p>CPF: <input id="cpf" class="form-control cpf validar" type="text"></p>
+      </label>
+      <label for="usuario">
+        <p>Usuário: <input id="usuario" class="form-control usuario validar" type="text"></p>
+      </label>
+      <label for="senha">
+        <p>Senha: <input id="senha" class="form-control senha validar" type="password"></p>
+      </label>
+      <label for="repetirSenha">
+        <p>Repetir Senha: <input id="repetirSenha" class="form-control repetirSenha validar" type="password"></p>
+      </label>
+      <p><button type="submit" id="enviar" class=" btn btn-primary">Enviar </button>
+      <button type="reset" class="resetar btn btn-warning">Limpar</button></p>
+
+    </form>
+   
+  </section>
+
+  <script src="./assets/js/validaCPF.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
